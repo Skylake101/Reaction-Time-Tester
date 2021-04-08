@@ -2,6 +2,7 @@
  * Author:Luke Carlson
  * Reaction  Time Monitor
  */
+
 //grnled
 #include <list>
 int grnled = D4;
@@ -33,6 +34,7 @@ void setup() { //Setup: ======================================================
   digitalWrite(D2, HIGH); //Turns light A0 on
   Serial.begin(9600);
 }
+//The green LED is lit when the time is going, the red when its stopped. Never at the same time.
 
 void loop() { //Loop =========================================================
   //When srtbut pushed{
